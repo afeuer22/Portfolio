@@ -598,9 +598,9 @@ if __name__ == "__main__":
     parser.add_argument("--force-reconvert", action="store_true", help="Force reconversion of all images")
     args = parser.parse_args()
 
-    source_url = "http://helium:2368"  # Change this to your local Ghost URL
-    target_url = "https://cadenkraft.com"  # Change this to your target URL
-    repo_path = "/home/ghost-static-site-gen"  # Change this to your local repo path
+    source_url = "http://local:2368"  # Change this to your local Ghost URL
+    target_url = "https://alexanderfeuer.com"  # Change this to your target URL
+    repo_path = "/ghost"  # Change this to your local repo path
 
     generator = ImprovedGhostStaticGenerator(source_url, target_url, repo_path, force_reconvert=args.force_reconvert)
     generator.run()
