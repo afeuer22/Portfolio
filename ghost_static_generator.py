@@ -600,7 +600,7 @@ if __name__ == "__main__":
 
     source_url = "http://local:2368"  # Change this to your local Ghost URL
     target_url = "https://alexanderfeuer.com"  # Change this to your target URL
-    repo_path = "/ghost"  # Change this to your local repo path
+    repo_path = "/home/ghost"  # Change this to your local repo path
 
     generator = ImprovedGhostStaticGenerator(source_url, target_url, repo_path, force_reconvert=args.force_reconvert)
     generator.run()
